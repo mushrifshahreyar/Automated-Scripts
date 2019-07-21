@@ -17,12 +17,14 @@ wait = WebDriverWait(driver, 20)
 target = ''
   
 # Replace the below string with your own message 
-string = "Happy Bday Mamujan...."
+string = "<Message>"
   
-x_arg = "//span[@title ='Uncle']"
+x_arg = "//span[@title ='<Reciever Name>']"
+#defining the path for the reciever
 group_title = wait.until(EC.presence_of_element_located(( 
     By.XPATH, x_arg))) 
 group_title.click() 
+#class path
 inp_xpath = "//div[@class ='_2S1VP copyable-text selectable-text']"
 input_box = wait.until(EC.presence_of_element_located(( 
     By.XPATH, inp_xpath))) 

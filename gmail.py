@@ -10,8 +10,8 @@ driver.get('https://mail.google.com/')
 wait = WebDriverWait(driver,5)
 arg = "//input[@class = 'whsOnd zHQkBf']"
 input_box = wait.until(EC.presence_of_element_located((By.XPATH,arg)))
-string = 'mushrifshahreyar'
-password = 'Tuttu@786'
+string = '<mail ID>'
+password = '<password>'
 input_box.send_keys(string)
 input_box.send_keys(Keys.ENTER)
 time.sleep(3)
